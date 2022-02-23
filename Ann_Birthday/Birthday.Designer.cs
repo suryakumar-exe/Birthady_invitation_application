@@ -75,6 +75,7 @@ namespace Ann_Birthday
             this.form1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.programBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label17 = new System.Windows.Forms.Label();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
@@ -576,6 +577,11 @@ namespace Ann_Birthday
             this.label17.TabIndex = 46;
             this.label17.Text = "Toast Message";
             // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.Text = "notifyIcon1";
+            this.notifyIcon1.Visible = true;
+            // 
             // Birthday
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -685,6 +691,7 @@ namespace Ann_Birthday
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
     }
 }
 

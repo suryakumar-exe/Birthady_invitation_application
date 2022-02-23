@@ -18,6 +18,8 @@ using Excel = Microsoft.Office.Interop.Excel;
 using System.Web.UI.WebControls;
 using Unipluss.Sign.ExternalContract.Entities;
 using static DGVPrinterHelper.DGVPrinter;
+using System.Diagnostics;
+using System.Threading;
 
 namespace Ann_Birthday
 {
@@ -31,7 +33,7 @@ namespace Ann_Birthday
 
         int birthday_count = 0;
         int aniver_count = 0;
-
+        Outlook._Application _app;
         public Birthday()
         {
             InitializeComponent();
@@ -287,9 +289,7 @@ namespace Ann_Birthday
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
-            try
-            {
+      
                 this.Location = new Point(0, 0);
                 this.Size = Screen.PrimaryScreen.WorkingArea.Size;
                 label14.BackColor = System.Drawing.Color.Transparent;
@@ -515,37 +515,37 @@ namespace Ann_Birthday
                     }
                     else
                     {
-                        if (aniver_count > 0)
-                        {
-                            Random rnd = new Random();
-                            int font = rnd.Next(0, 5);
-                            comboBox_Font.SelectedItem = Font_Arr[font];
+                    if (aniver_count > 0)
+                    {
+                        Random rnd = new Random();
+                        int font = rnd.Next(0, 5);
+                        comboBox_Font.SelectedItem = Font_Arr[font];
 
-                            int color = rnd.Next(0, 5);
-                            comboBox_color.SelectedItem = Color_Arr[color];
+                        int color = rnd.Next(0, 5);
+                        comboBox_color.SelectedItem = Color_Arr[color];
 
-                            int content = rnd.Next(0, 3);
-                            bodycontent_cb.SelectedItem = Content_Arr[content];
+                        int content = rnd.Next(0, 3);
+                        bodycontent_cb.SelectedItem = Content_Arr[content];
 
-                            label11.Text = Anni_imageSrc;
-                            comboBox1.Text = "Anniversaryday";
-                            btnSearch.PerformClick();
-                            button2.PerformClick();
-                            this.Close();
-                        }
+                        label11.Text = Anni_imageSrc;
+                        comboBox1.Text = "Anniversaryday";
+                        btnSearch.PerformClick();
+                        button2.PerformClick();
+                        this.Close();
+                        Thread.Sleep(30000);
+                        _app.Quit();
+                    }
                         else
                         {
                             this.Close();
+                            Thread.Sleep(30000);
+                            _app.Quit();
                         }
                     }
                 }
 
             }
-            catch(Exception ex)
-            {
-                this.Close();
-            }
-        }
+           
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -617,9 +617,9 @@ namespace Ann_Birthday
 
                 try
                 {
-                    Outlook._Application _app = new Outlook.Application();
+                     _app = new Outlook.Application();
                     Outlook.MailItem mail = (Outlook.MailItem)_app.CreateItem(Outlook.OlItemType.olMailItem);
-                    
+                   
 
                     //Subject
                     mail.Subject = msgbox.Text;
@@ -701,7 +701,7 @@ namespace Ann_Birthday
             {
                 try
                 {
-                    Outlook._Application _app = new Outlook.Application();
+                    _app = new Outlook.Application();
                     Outlook.MailItem mail = (Outlook.MailItem)_app.CreateItem(Outlook.OlItemType.olMailItem);
 
                     mail.Subject = msgbox.Text;
@@ -819,6 +819,9 @@ namespace Ann_Birthday
                     mail.Importance = Outlook.OlImportance.olImportanceNormal;
                     mail.Send();
                     label17.Text = "Aniiversary Day Wishes Sended Successfully";
+             
+                   
+                    
                     //MessageBox.Show("Message sended successfully", "Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)

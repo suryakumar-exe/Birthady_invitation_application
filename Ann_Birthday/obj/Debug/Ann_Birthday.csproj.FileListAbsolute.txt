@@ -130,3 +130,4 @@ C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\bin\Debug\protobuf-net.x
 C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\bin\Debug\ServiceStack.Text.xml
 C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\bin\Debug\Tulpep.NotificationWindow.dll
 C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\obj\Debug\Ann_Birthday.Birthday.resources
+C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\obj\Debug\Ann_Birthday.csproj.AssemblyReference.cache
