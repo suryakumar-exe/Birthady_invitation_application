@@ -123,7 +123,6 @@ C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\bin\Release\ru\Microsoft
 C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\bin\Release\zh-Hans\Microsoft.Spatial.resources.dll
 C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\bin\Release\zh-Hant\Microsoft.Spatial.resources.dll
 C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\obj\Release\Ann_Birthday.csproj.ResolveComReference.cache
-C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\obj\Release\Ann_Birthday.Form1.resources
 C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\obj\Release\Ann_Birthday.Properties.Resources.resources
 C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\obj\Release\Ann_Birthday.csproj.GenerateResource.cache
 C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\obj\Release\Ann_Birthday.csproj.CoreCompileInputs.cache
@@ -131,3 +130,4 @@ C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\obj\Release\Ann_Birthday
 C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\obj\Release\Ann_Birthday.exe
 C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\obj\Release\Ann_Birthday.pdb
 C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\obj\Release\Ann_Birthday.csproj.AssemblyReference.cache
+C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\obj\Release\Ann_Birthday.Birthday.resources

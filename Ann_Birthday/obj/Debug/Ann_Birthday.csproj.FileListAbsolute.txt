@@ -17,7 +17,6 @@ C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\bin\Debug\MoreLinq.xml
 C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\bin\Debug\System.Linq.Dynamic.Core.pdb
 C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\bin\Debug\System.Linq.Dynamic.Core.xml
 C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\bin\Debug\System.ValueTuple.xml
-C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\obj\Debug\Ann_Birthday.csproj.AssemblyReference.cache
 C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\obj\Debug\Ann_Birthday.Form1.resources
 C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\obj\Debug\Ann_Birthday.Properties.Resources.resources
 C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\obj\Debug\Ann_Birthday.csproj.GenerateResource.cache
@@ -130,3 +129,5 @@ C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\bin\Debug\AutoMapper.xml
 C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\bin\Debug\protobuf-net.pdb
 C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\bin\Debug\protobuf-net.xml
 C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\bin\Debug\ServiceStack.Text.xml
+C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\bin\Debug\Tulpep.NotificationWindow.dll
+C:\Users\KumarSu\source\repos\Ann_Birthday\Ann_Birthday\obj\Debug\Ann_Birthday.csproj.AssemblyReference.cache
