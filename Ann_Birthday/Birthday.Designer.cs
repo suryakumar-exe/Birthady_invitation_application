@@ -472,6 +472,7 @@ namespace Ann_Birthday
             this.GVprint.Size = new System.Drawing.Size(200, 121);
             this.GVprint.TabIndex = 38;
             this.GVprint.Visible = false;
+            this.GVprint.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GVprint_CellContentClick);
             // 
             // comboBox_Font
             // 
@@ -571,11 +572,11 @@ namespace Ann_Birthday
             this.label17.AutoSize = true;
             this.label17.Location = new System.Drawing.Point(509, 632);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(53, 20);
+            this.label17.Size = new System.Drawing.Size(100, 20);
             this.label17.TabIndex = 46;
-            this.label17.Text = "label17";
+            this.label17.Text = "Toast Message";
             // 
-            // Form1
+            // Birthday
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -623,7 +624,7 @@ namespace Ann_Birthday
             this.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "Form1";
+            this.Name = "Birthday";
             this.Text = "Birthday Anniversaryday Application";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
