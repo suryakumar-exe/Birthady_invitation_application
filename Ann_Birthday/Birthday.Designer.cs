@@ -31,51 +31,52 @@ namespace Ann_Birthday
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Birthday));
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btn_Search = new System.Windows.Forms.Button();
+            this.lbl_search = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btn_open = new System.Windows.Forms.Button();
             this.lbl_record = new System.Windows.Forms.Label();
             this.testdate = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.datepicker = new System.Windows.Forms.DateTimePicker();
+            this.selectday = new System.Windows.Forms.ComboBox();
             this.send = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_reset = new System.Windows.Forms.Button();
+            this.btn_send = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.ll_attach = new System.Windows.Forms.LinkLabel();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.msgbox = new System.Windows.Forms.TextBox();
+            this.lbl_subject = new System.Windows.Forms.Label();
+            this.txt_subject = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbl_header = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lbl_footer = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.rtb_wishes_header = new System.Windows.Forms.RichTextBox();
+            this.rtb_wishes_footer = new System.Windows.Forms.RichTextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lbl_topic = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.btn_Filter = new System.Windows.Forms.Button();
+            this.comboBox_month = new System.Windows.Forms.ComboBox();
             this.print = new System.Windows.Forms.Button();
             this.GVprint = new System.Windows.Forms.DataGridView();
             this.comboBox_Font = new System.Windows.Forms.ComboBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
+            this.lbl_font = new System.Windows.Forms.Label();
+            this.lbl_month = new System.Windows.Forms.Label();
+            this.lbl_color = new System.Windows.Forms.Label();
             this.comboBox_color = new System.Windows.Forms.ComboBox();
-            this.bodycontent_cb = new System.Windows.Forms.ComboBox();
-            this.label16 = new System.Windows.Forms.Label();
+            this.combobox_content = new System.Windows.Forms.ComboBox();
+            this.lbl_content = new System.Windows.Forms.Label();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.form1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.programBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.label17 = new System.Windows.Forms.Label();
+            this.lbl_toast = new System.Windows.Forms.Label();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.lbl_attach = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
@@ -84,33 +85,33 @@ namespace Ann_Birthday
             ((System.ComponentModel.ISupportInitialize)(this.programBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // btnSearch
+            // btn_Search
             // 
-            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnSearch.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSearch.Location = new System.Drawing.Point(888, 81);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(117, 41);
-            this.btnSearch.TabIndex = 0;
-            this.btnSearch.Text = "search";
-            this.btnSearch.UseVisualStyleBackColor = false;
-            this.btnSearch.Click += new System.EventHandler(this.button1_Click);
+            this.btn_Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn_Search.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Search.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_Search.Location = new System.Drawing.Point(888, 81);
+            this.btn_Search.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_Search.Name = "btn_Search";
+            this.btn_Search.Size = new System.Drawing.Size(117, 41);
+            this.btn_Search.TabIndex = 0;
+            this.btn_Search.Text = "Search";
+            this.btn_Search.UseVisualStyleBackColor = false;
+            this.btn_Search.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label1
+            // lbl_search
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label1.Location = new System.Drawing.Point(364, 81);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 30);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Search By :";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lbl_search.AutoSize = true;
+            this.lbl_search.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.lbl_search.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_search.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.lbl_search.Location = new System.Drawing.Point(364, 81);
+            this.lbl_search.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_search.Name = "lbl_search";
+            this.lbl_search.Size = new System.Drawing.Size(137, 30);
+            this.lbl_search.TabIndex = 1;
+            this.lbl_search.Text = "Search By :";
+            this.lbl_search.Click += new System.EventHandler(this.label1_Click);
             // 
             // dataGridView1
             // 
@@ -127,7 +128,7 @@ namespace Ann_Birthday
             this.btn_open.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btn_open.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold);
             this.btn_open.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_open.Location = new System.Drawing.Point(41, 81);
+            this.btn_open.Location = new System.Drawing.Point(47, 81);
             this.btn_open.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_open.Name = "btn_open";
             this.btn_open.Size = new System.Drawing.Size(117, 41);
@@ -159,31 +160,31 @@ namespace Ann_Birthday
             this.testdate.TabIndex = 7;
             this.testdate.Click += new System.EventHandler(this.testdate_Click);
             // 
-            // dateTimePicker1
+            // datepicker
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Comic Sans MS", 11.25F);
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(678, 81);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(180, 25);
-            this.dateTimePicker1.TabIndex = 10;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.datepicker.CalendarFont = new System.Drawing.Font("Comic Sans MS", 11.25F);
+            this.datepicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.datepicker.Location = new System.Drawing.Point(678, 81);
+            this.datepicker.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.datepicker.Name = "datepicker";
+            this.datepicker.Size = new System.Drawing.Size(180, 25);
+            this.datepicker.TabIndex = 10;
+            this.datepicker.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
-            // comboBox1
+            // selectday
             // 
-            this.comboBox1.Font = new System.Drawing.Font("MV Boli", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.selectday.Font = new System.Drawing.Font("MV Boli", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectday.FormattingEnabled = true;
+            this.selectday.Items.AddRange(new object[] {
             "Birthday",
             "Anniversaryday"});
-            this.comboBox1.Location = new System.Drawing.Point(509, 81);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(143, 25);
-            this.comboBox1.TabIndex = 11;
-            this.comboBox1.Text = "Birthday";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
+            this.selectday.Location = new System.Drawing.Point(509, 81);
+            this.selectday.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.selectday.Name = "selectday";
+            this.selectday.Size = new System.Drawing.Size(143, 25);
+            this.selectday.TabIndex = 11;
+            this.selectday.Text = "Birthday";
+            this.selectday.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
             // 
             // send
             // 
@@ -199,33 +200,33 @@ namespace Ann_Birthday
             this.send.UseVisualStyleBackColor = false;
             this.send.Visible = false;
             // 
-            // button1
+            // btn_reset
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button1.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(1034, 81);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 41);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Reset File";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.btn_reset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn_reset.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_reset.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_reset.Location = new System.Drawing.Point(1034, 81);
+            this.btn_reset.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_reset.Name = "btn_reset";
+            this.btn_reset.Size = new System.Drawing.Size(117, 41);
+            this.btn_reset.TabIndex = 13;
+            this.btn_reset.Text = "Reset File";
+            this.btn_reset.UseVisualStyleBackColor = false;
+            this.btn_reset.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // button2
+            // btn_send
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button2.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold);
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Location = new System.Drawing.Point(45, 615);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(117, 41);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Send";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn_send.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn_send.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_send.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_send.Location = new System.Drawing.Point(47, 615);
+            this.btn_send.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_send.Name = "btn_send";
+            this.btn_send.Size = new System.Drawing.Size(117, 41);
+            this.btn_send.TabIndex = 14;
+            this.btn_send.Text = "Send";
+            this.btn_send.UseVisualStyleBackColor = false;
+            this.btn_send.Click += new System.EventHandler(this.button2_Click);
             // 
             // dataGridView2
             // 
@@ -244,22 +245,22 @@ namespace Ann_Birthday
             this.fileSystemWatcher1.SynchronizingObject = this;
             this.fileSystemWatcher1.Changed += new System.IO.FileSystemEventHandler(this.fileSystemWatcher1_Changed);
             // 
-            // linkLabel1
+            // ll_attach
             // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.DarkViolet;
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.linkLabel1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.linkLabel1.LinkColor = System.Drawing.Color.Fuchsia;
-            this.linkLabel1.Location = new System.Drawing.Point(41, 140);
-            this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(101, 23);
-            this.linkLabel1.TabIndex = 16;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Attachment";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.ll_attach.ActiveLinkColor = System.Drawing.Color.DarkViolet;
+            this.ll_attach.AutoSize = true;
+            this.ll_attach.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.ll_attach.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ll_attach.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.ll_attach.LinkColor = System.Drawing.Color.Fuchsia;
+            this.ll_attach.Location = new System.Drawing.Point(47, 140);
+            this.ll_attach.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ll_attach.Name = "ll_attach";
+            this.ll_attach.Size = new System.Drawing.Size(101, 23);
+            this.ll_attach.TabIndex = 16;
+            this.ll_attach.TabStop = true;
+            this.ll_attach.Text = "Attachment";
+            this.ll_attach.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // openFileDialog1
             // 
@@ -276,109 +277,109 @@ namespace Ann_Birthday
             this.label2.TabIndex = 17;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label3
+            // lbl_subject
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(41, 201);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 21);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "Subject :";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.lbl_subject.AutoSize = true;
+            this.lbl_subject.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_subject.Location = new System.Drawing.Point(47, 201);
+            this.lbl_subject.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_subject.Name = "lbl_subject";
+            this.lbl_subject.Size = new System.Drawing.Size(80, 21);
+            this.lbl_subject.TabIndex = 18;
+            this.lbl_subject.Text = "Subject :";
+            this.lbl_subject.Click += new System.EventHandler(this.label3_Click);
             // 
-            // msgbox
+            // txt_subject
             // 
-            this.msgbox.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.msgbox.Location = new System.Drawing.Point(41, 227);
-            this.msgbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.msgbox.Name = "msgbox";
-            this.msgbox.Size = new System.Drawing.Size(276, 28);
-            this.msgbox.TabIndex = 19;
-            this.msgbox.TextChanged += new System.EventHandler(this.msgbox_TextChanged);
+            this.txt_subject.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_subject.Location = new System.Drawing.Point(47, 227);
+            this.txt_subject.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_subject.Name = "txt_subject";
+            this.txt_subject.Size = new System.Drawing.Size(276, 28);
+            this.txt_subject.TabIndex = 19;
+            this.txt_subject.TextChanged += new System.EventHandler(this.msgbox_TextChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(41, 227);
+            this.label4.Location = new System.Drawing.Point(47, 227);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(0, 20);
             this.label4.TabIndex = 20;
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // label5
+            // lbl_header
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(41, 271);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(134, 21);
-            this.label5.TabIndex = 22;
-            this.label5.Text = "Wishes Header :";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.lbl_header.AutoSize = true;
+            this.lbl_header.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_header.Location = new System.Drawing.Point(47, 271);
+            this.lbl_header.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_header.Name = "lbl_header";
+            this.lbl_header.Size = new System.Drawing.Size(134, 21);
+            this.lbl_header.TabIndex = 22;
+            this.lbl_header.Text = "Wishes Header :";
+            this.lbl_header.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(41, 219);
+            this.label6.Location = new System.Drawing.Point(47, 219);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(0, 20);
             this.label6.TabIndex = 21;
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // label7
+            // lbl_footer
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(41, 443);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(129, 21);
-            this.label7.TabIndex = 25;
-            this.label7.Text = "Wishes Footer :";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            this.lbl_footer.AutoSize = true;
+            this.lbl_footer.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_footer.Location = new System.Drawing.Point(47, 443);
+            this.lbl_footer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_footer.Name = "lbl_footer";
+            this.lbl_footer.Size = new System.Drawing.Size(129, 21);
+            this.lbl_footer.TabIndex = 25;
+            this.lbl_footer.Text = "Wishes Footer :";
+            this.lbl_footer.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(41, 346);
+            this.label8.Location = new System.Drawing.Point(47, 346);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(0, 20);
             this.label8.TabIndex = 24;
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // richTextBox1
+            // rtb_wishes_header
             // 
-            this.richTextBox1.Font = new System.Drawing.Font("Comic Sans MS", 11.25F);
-            this.richTextBox1.Location = new System.Drawing.Point(41, 296);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(276, 143);
-            this.richTextBox1.TabIndex = 27;
-            this.richTextBox1.Text = "";
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            this.rtb_wishes_header.Font = new System.Drawing.Font("Comic Sans MS", 11.25F);
+            this.rtb_wishes_header.Location = new System.Drawing.Point(47, 296);
+            this.rtb_wishes_header.Margin = new System.Windows.Forms.Padding(4);
+            this.rtb_wishes_header.Name = "rtb_wishes_header";
+            this.rtb_wishes_header.Size = new System.Drawing.Size(276, 143);
+            this.rtb_wishes_header.TabIndex = 27;
+            this.rtb_wishes_header.Text = "";
+            this.rtb_wishes_header.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
-            // richTextBox2
+            // rtb_wishes_footer
             // 
-            this.richTextBox2.Font = new System.Drawing.Font("Comic Sans MS", 11.25F);
-            this.richTextBox2.Location = new System.Drawing.Point(41, 467);
-            this.richTextBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(276, 143);
-            this.richTextBox2.TabIndex = 28;
-            this.richTextBox2.Text = "";
-            this.richTextBox2.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
+            this.rtb_wishes_footer.Font = new System.Drawing.Font("Comic Sans MS", 11.25F);
+            this.rtb_wishes_footer.Location = new System.Drawing.Point(47, 467);
+            this.rtb_wishes_footer.Margin = new System.Windows.Forms.Padding(4);
+            this.rtb_wishes_footer.Name = "rtb_wishes_footer";
+            this.rtb_wishes_footer.Size = new System.Drawing.Size(276, 143);
+            this.rtb_wishes_footer.TabIndex = 28;
+            this.rtb_wishes_footer.Text = "";
+            this.rtb_wishes_footer.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("MV Boli", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(41, 170);
+            this.label9.Location = new System.Drawing.Point(47, 170);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(0, 17);
@@ -386,18 +387,18 @@ namespace Ann_Birthday
             this.label9.Visible = false;
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
-            // label10
+            // lbl_topic
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Gray;
-            this.label10.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Yellow;
-            this.label10.Location = new System.Drawing.Point(277, 24);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(755, 35);
-            this.label10.TabIndex = 30;
-            this.label10.Text = "NORDEX BIRTHDAY AND ANNIVERSARY DAY APPLICATION";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
+            this.lbl_topic.AutoSize = true;
+            this.lbl_topic.BackColor = System.Drawing.Color.Gray;
+            this.lbl_topic.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_topic.ForeColor = System.Drawing.Color.Yellow;
+            this.lbl_topic.Location = new System.Drawing.Point(277, 24);
+            this.lbl_topic.Name = "lbl_topic";
+            this.lbl_topic.Size = new System.Drawing.Size(755, 35);
+            this.lbl_topic.TabIndex = 30;
+            this.lbl_topic.Text = "NORDEX BIRTHDAY AND ANNIVERSARY DAY APPLICATION";
+            this.lbl_topic.Click += new System.EventHandler(this.label10_Click);
             // 
             // label12
             // 
@@ -410,30 +411,30 @@ namespace Ann_Birthday
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(41, 170);
+            this.label11.Location = new System.Drawing.Point(47, 170);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(0, 20);
             this.label11.TabIndex = 33;
             // 
-            // button3
+            // btn_Filter
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button3.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(1180, 216);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(117, 41);
-            this.button3.TabIndex = 35;
-            this.button3.Text = "Filter";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            this.btn_Filter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btn_Filter.Font = new System.Drawing.Font("MV Boli", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Filter.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_Filter.Location = new System.Drawing.Point(1180, 216);
+            this.btn_Filter.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_Filter.Name = "btn_Filter";
+            this.btn_Filter.Size = new System.Drawing.Size(117, 41);
+            this.btn_Filter.TabIndex = 35;
+            this.btn_Filter.Text = "Filter";
+            this.btn_Filter.UseVisualStyleBackColor = false;
+            this.btn_Filter.Click += new System.EventHandler(this.button3_Click_1);
             // 
-            // comboBox2
+            // comboBox_month
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.comboBox_month.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_month.FormattingEnabled = true;
+            this.comboBox_month.Items.AddRange(new object[] {
             "01",
             "02",
             "03",
@@ -446,10 +447,10 @@ namespace Ann_Birthday
             "10",
             "11",
             "12"});
-            this.comboBox2.Location = new System.Drawing.Point(1180, 159);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 28);
-            this.comboBox2.TabIndex = 36;
+            this.comboBox_month.Location = new System.Drawing.Point(1180, 159);
+            this.comboBox_month.Name = "comboBox_month";
+            this.comboBox_month.Size = new System.Drawing.Size(121, 28);
+            this.comboBox_month.TabIndex = 36;
             // 
             // print
             // 
@@ -493,33 +494,33 @@ namespace Ann_Birthday
             this.comboBox_Font.TabIndex = 39;
             this.comboBox_Font.SelectedIndexChanged += new System.EventHandler(this.comboBox_Font_SelectedIndexChanged);
             // 
-            // label13
+            // lbl_font
             // 
-            this.label13.AutoSize = true;
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(1180, 299);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(37, 20);
-            this.label13.TabIndex = 40;
-            this.label13.Text = "Font";
+            this.lbl_font.AutoSize = true;
+            this.lbl_font.ForeColor = System.Drawing.Color.Black;
+            this.lbl_font.Location = new System.Drawing.Point(1180, 299);
+            this.lbl_font.Name = "lbl_font";
+            this.lbl_font.Size = new System.Drawing.Size(37, 20);
+            this.lbl_font.TabIndex = 40;
+            this.lbl_font.Text = "Font";
             // 
-            // label14
+            // lbl_month
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(1180, 118);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(48, 20);
-            this.label14.TabIndex = 41;
-            this.label14.Text = "Month";
+            this.lbl_month.AutoSize = true;
+            this.lbl_month.Location = new System.Drawing.Point(1180, 118);
+            this.lbl_month.Name = "lbl_month";
+            this.lbl_month.Size = new System.Drawing.Size(48, 20);
+            this.lbl_month.TabIndex = 41;
+            this.lbl_month.Text = "Month";
             // 
-            // label15
+            // lbl_color
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(1180, 368);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(43, 20);
-            this.label15.TabIndex = 42;
-            this.label15.Text = "Color";
+            this.lbl_color.AutoSize = true;
+            this.lbl_color.Location = new System.Drawing.Point(1180, 368);
+            this.lbl_color.Name = "lbl_color";
+            this.lbl_color.Size = new System.Drawing.Size(43, 20);
+            this.lbl_color.TabIndex = 42;
+            this.lbl_color.Text = "Color";
             // 
             // comboBox_color
             // 
@@ -537,28 +538,28 @@ namespace Ann_Birthday
             this.comboBox_color.TabIndex = 43;
             this.comboBox_color.SelectedIndexChanged += new System.EventHandler(this.comboBox_color_SelectedIndexChanged);
             // 
-            // bodycontent_cb
+            // combobox_content
             // 
-            this.bodycontent_cb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.bodycontent_cb.FormattingEnabled = true;
-            this.bodycontent_cb.Items.AddRange(new object[] {
+            this.combobox_content.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combobox_content.FormattingEnabled = true;
+            this.combobox_content.Items.AddRange(new object[] {
             "Content 1",
             "Content 2",
             "Content 3"});
-            this.bodycontent_cb.Location = new System.Drawing.Point(1180, 477);
-            this.bodycontent_cb.Name = "bodycontent_cb";
-            this.bodycontent_cb.Size = new System.Drawing.Size(121, 28);
-            this.bodycontent_cb.TabIndex = 45;
-            this.bodycontent_cb.SelectedIndexChanged += new System.EventHandler(this.bodycontent_cb_SelectedIndexChanged);
+            this.combobox_content.Location = new System.Drawing.Point(1180, 477);
+            this.combobox_content.Name = "combobox_content";
+            this.combobox_content.Size = new System.Drawing.Size(121, 28);
+            this.combobox_content.TabIndex = 45;
+            this.combobox_content.SelectedIndexChanged += new System.EventHandler(this.bodycontent_cb_SelectedIndexChanged);
             // 
-            // label16
+            // lbl_content
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(1180, 445);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(92, 20);
-            this.label16.TabIndex = 44;
-            this.label16.Text = "Body Content";
+            this.lbl_content.AutoSize = true;
+            this.lbl_content.Location = new System.Drawing.Point(1180, 445);
+            this.lbl_content.Name = "lbl_content";
+            this.lbl_content.Size = new System.Drawing.Size(92, 20);
+            this.lbl_content.TabIndex = 44;
+            this.lbl_content.Text = "Body Content";
             // 
             // form1BindingSource
             // 
@@ -568,19 +569,28 @@ namespace Ann_Birthday
             // 
             this.programBindingSource.CurrentChanged += new System.EventHandler(this.programBindingSource_CurrentChanged);
             // 
-            // label17
+            // lbl_toast
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(509, 632);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(100, 20);
-            this.label17.TabIndex = 46;
-            this.label17.Text = "Toast Message";
+            this.lbl_toast.AutoSize = true;
+            this.lbl_toast.Location = new System.Drawing.Point(566, 626);
+            this.lbl_toast.Name = "lbl_toast";
+            this.lbl_toast.Size = new System.Drawing.Size(100, 20);
+            this.lbl_toast.TabIndex = 46;
+            this.lbl_toast.Text = "Toast Message";
             // 
             // notifyIcon1
             // 
             this.notifyIcon1.Text = "notifyIcon1";
             this.notifyIcon1.Visible = true;
+            // 
+            // lbl_attach
+            // 
+            this.lbl_attach.AutoSize = true;
+            this.lbl_attach.Location = new System.Drawing.Point(47, 170);
+            this.lbl_attach.Name = "lbl_attach";
+            this.lbl_attach.Size = new System.Drawing.Size(18, 20);
+            this.lbl_attach.TabIndex = 47;
+            this.lbl_attach.Text = "...";
             // 
             // Birthday
             // 
@@ -588,45 +598,46 @@ namespace Ann_Birthday
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Ann_Birthday.Properties.Resources.final;
             this.ClientSize = new System.Drawing.Size(1370, 663);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.bodycontent_cb);
-            this.Controls.Add(this.label16);
+            this.Controls.Add(this.lbl_attach);
+            this.Controls.Add(this.lbl_toast);
+            this.Controls.Add(this.combobox_content);
+            this.Controls.Add(this.lbl_content);
             this.Controls.Add(this.comboBox_color);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label13);
+            this.Controls.Add(this.lbl_color);
+            this.Controls.Add(this.lbl_month);
+            this.Controls.Add(this.lbl_font);
             this.Controls.Add(this.comboBox_Font);
             this.Controls.Add(this.GVprint);
             this.Controls.Add(this.print);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.comboBox_month);
+            this.Controls.Add(this.btn_Filter);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.lbl_topic);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.richTextBox2);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.rtb_wishes_footer);
+            this.Controls.Add(this.rtb_wishes_header);
+            this.Controls.Add(this.lbl_footer);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lbl_header);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.msgbox);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txt_subject);
+            this.Controls.Add(this.lbl_subject);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.ll_attach);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_send);
+            this.Controls.Add(this.btn_reset);
             this.Controls.Add(this.send);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.selectday);
+            this.Controls.Add(this.datepicker);
             this.Controls.Add(this.testdate);
             this.Controls.Add(this.lbl_record);
             this.Controls.Add(this.btn_open);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.lbl_search);
+            this.Controls.Add(this.btn_Search);
             this.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -647,51 +658,52 @@ namespace Ann_Birthday
 
         #endregion
 
-        private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_Search;
+        private System.Windows.Forms.Label lbl_search;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btn_open;
         private System.Windows.Forms.Label lbl_record;
         private System.Windows.Forms.Label testdate;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.DateTimePicker datepicker;
+        private System.Windows.Forms.ComboBox selectday;
         private System.Windows.Forms.Button send;
         private System.Windows.Forms.BindingSource programBindingSource;
         private System.Windows.Forms.BindingSource form1BindingSource;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_reset;
+        private System.Windows.Forms.Button btn_send;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.IO.FileSystemWatcher fileSystemWatcher1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel ll_attach;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox msgbox;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txt_subject;
+        private System.Windows.Forms.Label lbl_subject;
+        private System.Windows.Forms.Label lbl_footer;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbl_header;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox rtb_wishes_footer;
+        private System.Windows.Forms.RichTextBox rtb_wishes_header;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lbl_topic;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Button btn_Filter;
+        private System.Windows.Forms.ComboBox comboBox_month;
         private System.Windows.Forms.Button print;
         private System.Windows.Forms.DataGridView GVprint;
         private System.Windows.Forms.ComboBox comboBox_Font;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lbl_font;
+        private System.Windows.Forms.Label lbl_month;
         private System.Windows.Forms.ComboBox comboBox_color;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.ComboBox bodycontent_cb;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label lbl_color;
+        private System.Windows.Forms.ComboBox combobox_content;
+        private System.Windows.Forms.Label lbl_content;
         private System.Windows.Forms.ColorDialog colorDialog1;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label lbl_toast;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private System.Windows.Forms.Label lbl_attach;
     }
 }
 
